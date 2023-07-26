@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form action="/inst_page/genre" method="POST">
+    Pop music
+    <input type="radio" name="genre" value="Pop"/><br>
+    Hip hop music
+    <input type="radio" name="genre" value="HipHop"/><br>
+    Rock music
+    <input type="radio" name="genre" value="Rock"/><br>
+    Blues
+    <input type="radio" name="genre" value="Blues"/><br>
+    <div>
+            <input type="submit"/>
+    </div>
+    </form>
+    <h2>which musicion do you like listening to most, from the musicions below? </h2>
+    {% if genre == "Pop" %}
+    <form action="/inst_page/POP" method="POST">
+        Harry Styles
+        <input type="radio" name="POP" value="Harry Styles"/><br>
+        Michael jackson
+        <input type="radio" name="POP" value="Michael Jackson"/><br>
+        Bille Eilish
+        <input type="radio" name="POP" value="Bille Eilish"/><br>
+        Justin Bieber
+        <input type="radio" name="POP" value="Justin Bieber"/><br>
+        <div>
+            <input type="submit"/>
+    </div>
+    </form>
+    {% endif %}
+
+
+    {% if genre == "HipHop" %}
+    <form action="/inst_page/HipHop" method="POST">
+        21 savage
+        <input type="radio" name="HipHop" value="21 Savage"/><br>
+        50 Cent
+        <input type="radio" name="HipHop" value="50 Cent"/><br>
+        Kanye West
+        <input type="radio" name="HipHop" value="Kanye West"/><br>
+        Nicki Minaj
+        <input type="radio" name="HipHop" value="Nicki Minaj"/><br>
+        <div>
+            <input type="submit"/>
+    </div>
+    </form>
+    {% endif %}
+
+    {% if genre == "Rock" %}
+    <form action="/inst_page/Rock" method="POST">
+        Red Hot Chili Peppers
+        <input type="radio" name="Rock" value="Red Hot Chili Peppers"/><br>
+        Coldplay
+        <input type="radio" name="Rock" value="Coldplay"/><br>
+        Maroon 5
+        <input type="radio" name="Rock" value="Maroon 5"/><br>
+        Kings of Leon
+        <input type="radio" name="Rock" value="Kings of Leon"/><br>
+        <div>
+            <input type="submit"/>
+    </div>
+    </form>
+    {% endif %}
+
+
+    {% if genre == "Blues" %}
+    <form action="/inst_page/Blues" method="POST">
+        Jimi Hendrix
+        <input type="radio" name="Blues" value="Jimi Hendrix"/><br>
+        Eric Clapton
+        <input type="radio" name="Blues" value="Eric Clapton"/><br>
+        Howlin’ Wolf
+        <input type="radio" name="Blues" value="Howlin’ Wolf"/><br>
+        B.B. King
+        <input type="radio" name="Blues" value="B.B. King"/><br>
+        <div>
+            <input type="submit"/>
+    </div>
+    </form>
+
+    {% endif %}
+    {% if genre == "Harry Styles" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the Piano! </h1>
+    <img src="https://www.yamaha.com/en/musical_instrument_guide/common/images/piano/parts_viewer01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}  
+
+    {% if genre == "Michael Jackson" %}
+    <form>
+    <h1>Good choices! in our opinion you should play an ELECTRIC GUITAR! </h1>
+    <img src="https://www.artistguitars.co.uk/cdn/shop/files/16155_ffa08744-dda7-4395-8ccf-cff9c1fcf29a.jpg?v=1689165323" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "Bille Eilish" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the CHELO! </h1>
+    <img src="https://cdn.globalso.com/beijingmelody/yc-600.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "Justin Bieber" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the SAXOPHONE! </h1>
+    <img src="https://cdn.images.fecom-media.com/HE1875310_1433221-HOP-MUS-P01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+     {% if genre == "21 savage" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the Piano! </h1>
+    <img src="https://www.yamaha.com/en/musical_instrument_guide/common/images/piano/parts_viewer01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "50 Cent" %}
+    <form>
+    <h1>Good choices! in our opinion you should play an ELECTRIC GUITAR! </h1>
+    <img src="https://www.artistguitars.co.uk/cdn/shop/files/16155_ffa08744-dda7-4395-8ccf-cff9c1fcf29a.jpg?v=1689165323" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "Kanye West" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the CHELO! </h1>
+    <img src="https://cdn.globalso.com/beijingmelody/yc-600.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "Nicki Minaj" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the SAXOPHONE! </h1>
+    <img src="https://cdn.images.fecom-media.com/HE1875310_1433221-HOP-MUS-P01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Red Hot Chili Peppers" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the Piano! </h1>
+    <img src="https://www.yamaha.com/en/musical_instrument_guide/common/images/piano/parts_viewer01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Coldplay" %}
+    <form>
+    <h1>Good choices! in our opinion you should play an ELECTRIC GUITAR! </h1>
+    <img src="https://www.artistguitars.co.uk/cdn/shop/files/16155_ffa08744-dda7-4395-8ccf-cff9c1fcf29a.jpg?v=1689165323" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Maroon 5" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the CHELO! </h1>
+    <img src="https://cdn.globalso.com/beijingmelody/yc-600.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "Kings of Leon" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the SAXOPHONE! </h1>
+    <img src="https://cdn.images.fecom-media.com/HE1875310_1433221-HOP-MUS-P01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Jimi Hendrix" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the Piano! </h1>
+    <img src="https://www.yamaha.com/en/musical_instrument_guide/common/images/piano/parts_viewer01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Eric Clapton" %}
+    <form>
+    <h1>Good choices! in our opinion you should play an ELECTRIC GUITAR! </h1>
+    <img src="https://www.artistguitars.co.uk/cdn/shop/files/16155_ffa08744-dda7-4395-8ccf-cff9c1fcf29a.jpg?v=1689165323" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+    {% if genre == "Howlin’ Wolf" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the CHELO! </h1>
+    <img src="https://cdn.globalso.com/beijingmelody/yc-600.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %} 
+
+    {% if genre == "B.B. King" %}
+    <form>
+    <h1>Good choices! in our opinion you should play the SAXOPHONE! </h1>
+    <img src="https://cdn.images.fecom-media.com/HE1875310_1433221-HOP-MUS-P01.jpg" alt="buttonpng" border="0">
+    </form>
+    {% endif %}
+
+
+</body>
+</html>
+
+<!-- guitar - <img src="https://usa.yamaha.com/files/02_FG9-R_4f2c43714dd416cf58934ba204689a0f.jpg?impolicy=resize&imwid=396&imhei=396" alt="buttonpng" border="0" /> -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MoIns {{ name }}!</title>
+</head>
+<body>
+  <style>
+    body {
+      background: radial-gradient(circle, #e67e22, #f39c12, #e74c3c, #c0392b);
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #333; /* Darker text color (#333) */
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333; /* Darker text color (#333) */
+    }
+
+    h2 {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 10px 0;
+      color: #444; /* Darker text color (#444) */
+    }
+
+    h2.blue {
+      color: #3498db; /* Blue color (#3498db) */
+    }
+
+    h2.blue::after {
+      background-color: #3498db; /* Blue color (#3498db) */
+    }
+
+    h2::before,
+    h2::after {
+      background-color: #fff; /* White color (#fff) */
+    }
+
+    h2.white::before,
+    h2.white::after {
+      background-color: #fff; /* White color (#fff) */
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    input[type="button"] {
+      background-color: #e67e22; /* Orange color (#e67e22) */
+      color: #fff; /* Text color (#fff) */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease; /* Add transition effect */
+    }
+
+    input[type="button"]:hover {
+      background-color: #d35400; /* Darker orange color on hover (#d35400) */
+    }
+
+    img {
+      border-radius: 5px;
+      margin-top: 20px;
+      max-width: 200px;
+      max-height: 200px;
+    }
+  </style>
+
+  <h1>Welcome to MoIns {{ name }}!</h1>
+  <h2 class="blue">
+    Welcome to the ultimate stage for musical virtuosos and soulful crooners alike! Brace yourself for a symphony of excitement as we unveil a digital wonderland tailored exclusively for musicians – yes, that's YOU!<br><br>
+
+    Step into a realm where melodies dance freely and harmonies soar to celestial heights. Our site is a euphoric haven, designed by musicians, for musicians, with every note meticulously crafted to unleash your creative prowess. Whether you wield the power of an instrument like a maestro or let your voice paint an emotive canvas, this is your sanctuary to thrive and shine!
+  </h2>
+
+  <h2 class="white">Please pick your profession:</h2>
+
+  <form>
+    <input type="button" onclick="window.location.href='/inst_page/s';" value="I can play!">
+    <img src="https://www.popsci.com/uploads/2023/01/20/Cordoba-C5-CE-best-acoustic-guitars-with-nylon-strings.jpg?auto=webp" alt="guitar">
+    <input type="button" onclick="window.location.href='/sing';" value="I can sing!">
+  </form>
+</body>
+</html>

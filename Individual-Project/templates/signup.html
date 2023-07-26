@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+     <form method="post" action="/signup">
+        <!-- Heading -->
+        <h4 style="color: bisque;">
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p style="color: bisque;">
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+
+        </div>
+
+        <!-- full name-->
+         <div>
+  <label>Full name*</label>
+  <div>
+    <input type="text" name="full_name" id="full_Name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 20px;">
+  </div>
+</div>
+
+<!-- Username -->
+<div>
+  <label>Username*</label>
+  <div>
+    <input type="text" name="user_name" id="full_username" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 20px;">
+  </div>
+</div>
+
+        <!-- Bio-->
+         <div>
+            <label>age*</label>
+            <div>
+                <input type="text"  name="age" id="user_bio" required>
+            </div>
+            
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+
+        <!-- Password confirm-->
+         <div>
+            <label>Password confirmation*</label>
+            <div class="input-group">
+                <input type="password"  name="password_confirm" minlength="6">
+            </div>
+        </div>
+        
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+        <div><a href="/"><button type="button">already have an account?</button></a></div>
+    </form>
+    <br>
+    <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: bisque;
+    }
+
+    p {
+      color: bisque;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #d35400;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Additional Styles for "don't have an account" link */
+    form a {
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    
+  </style>
+    
+</body>
+</html>
